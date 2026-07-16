@@ -146,4 +146,6 @@ This project was built by a 7-person team as part of the Digital Egypt Pioneers 
 
 ## Contact
 
-Mohamed Gamal — [mohamedgr148@gmail.com](mailto:mohamedgr148@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/mohamed-gamal-64a884279/)
+- [Email](mailto:mohamedgr148@gmail.com)
+
