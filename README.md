@@ -75,6 +75,8 @@ The training set was assembled from three public autonomous-driving datasets, ea
 
 Classification loss drops sharply across training while box loss continues improving more gradually, and validation loss stays stable relative to training loss — indicating the model generalizes without significant overfitting despite the difficulty of the merged 57-class label space.
 
+![Training curves: box/cls/dfl loss, precision, recall, mAP50, mAP50-95](ultimate_overnight/results.png)
+
 ## Streamlit Dashboard
 
 The trained weights are served through a Streamlit app (`Teset.py`) with two modes, selectable from the sidebar:
@@ -93,7 +95,7 @@ Both modes use consistent color-coded bounding boxes per class and a shared conf
 ### Running the App Locally
 
 ```bash
-git clone https://github.com/<your-username>/Real-Time-Object-Detection-for-Autonomous-Vehicles.git
+git clone https://github.com/mohamed456423/Real-Time-Object-Detection-for-Autonomous-Vehicles.git
 cd Real-Time-Object-Detection-for-Autonomous-Vehicles
 pip install streamlit opencv-python numpy pandas ultralytics
 streamlit run Teset.py
@@ -133,6 +135,8 @@ This project was built by a 7-person team as part of the Digital Egypt Pioneers 
 | **Recall** | 0.728 | **Strong Detection Coverage** across vehicles, signs, and lights |
 | **Val Box Loss** | 0.755 | **Stable Generalization** — no significant overfitting vs. training loss |
 
+![Precision-Recall curve per class](ultimate_overnight/PR_curve.png)
+
 ## Future Work
 
 - Production-grade REST API deployment alongside the Streamlit interface
@@ -142,5 +146,4 @@ This project was built by a 7-person team as part of the Digital Egypt Pioneers 
 
 ## Contact
 
-- [LinkedIn](https://www.linkedin.com/in/mohamed-gamal-64a884279/)
-- [Email](mailto:mohamedgr148@gmail.com)
+Mohamed Gamal — [mohamedgr148@gmail.com](mailto:mohamedgr148@gmail.com)
