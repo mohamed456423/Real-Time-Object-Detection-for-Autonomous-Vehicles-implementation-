@@ -81,12 +81,12 @@ Classification loss drops sharply across training while box loss continues impro
 
 The trained weights are served through a Streamlit app (`Teset.py`) with two modes, selectable from the sidebar:
 
-**📹 Upload Video**
+**Upload Video**
 - Upload an `.mp4` / `.avi` / `.mov` file
 - Frame-by-frame inference with live bounding-box overlay as the video plays
 - On completion, generates a report with total/processed frame counts, average FPS, low-light flag, per-class detection counts (table + bar chart), and a "most detected object" insight
 
-**📷 Live Camera Detection**
+**Live Camera Detection**
 - Start/stop controls to run inference directly on a connected webcam feed
 - Same real-time overlay and end-of-session report as the video mode, plus an FPS-based performance verdict (flags when average FPS drops below 12, suggesting a lighter model variant such as YOLOv8n)
 
